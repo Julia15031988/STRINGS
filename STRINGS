@@ -1,0 +1,122 @@
+#STRINGS
+
+
+#1
+
+
+txt = " Understanding  'Pyton'  - getiing sucess. "
+print(txt)
+txt = ' Understanding  "Pyton"  - getiing sucess. '
+print(txt)
+txt = " Understanding  \"Pyton\"  - getiing sucess. "
+print(txt)
+txt = ' Understanding  \'Pyton\'  - getiing sucess. '
+print(txt)
+txt = " Understanding  'Pyton' \
+ - getiing sucess. "
+print(txt)
+txt = " Understanding  'Pyton' \n  - getiing sucess. "
+print(txt)
+txt = """ Understanding  
+"Pyton" 
+ - getiing sucess. """
+
+print(txt)
+
+
+
+#2
+
+
+#concatination of rows
+txt= "We all are learning "  " Python"
+print(txt)
+print ("the length is", len(txt), "letters")
+#using tabulation \t
+print ("index\t letter")
+#reflection indexes and letters
+for i in range (len(txt)):
+    print (str(i) + " :\t" +txt[i])
+print (txt[22:])
+#reflect the row from end to begin
+print (txt[::-1])
+#the string row
+word = "Jawa"
+#clear concatination
+txt = txt[:10] + " not " +txt [11:19] +  word
+print (txt)
+
+
+#3
+
+
+txt= "we are learning PYTHON"
+print (txt.upper())
+print (txt. lower())
+print(txt.capitalize())
+print(txt.title())
+print(txt.swapcase())
+print(txt)
+
+
+#4
+
+txt = """В.С. Стус "Сто років"...(уривок):
+Сто років як сконала Січ.
+Сибір. і Соловецькі келії.
+І глупа облягає ніч
+Пекельний край і крик пекельний.
+Сто років мучених надій,
+І сподівань , і вір, і крові
+Синів, шо за любов тавровані,
+Сто серць, як сто палахкотінь."""
+word = "Сто"
+print (txt, end='\n \n')
+print("The substring in", txt.count(word), "times")
+print ("The first position", txt.index(word))
+print ("Next position", txt.find(word,13))
+print ("The last position", txt.rindex(word))
+print ("There are initias at the beginning", txt.startswith("B.C."))
+print ("In the end is point, " , txt.endswith("."), end='\n\n')
+print (txt. replace(" ", "_"))
+
+
+#5
+
+
+print ("123".isdigit(), "12.3".isdigit())
+print ("abc".isalpha(), "abc123".isalpha())
+print ( "ab12".isalnum(), "ab12\n".isalnum())
+print ("ABC".isupper(), "aBc".isupper())
+print ("abc".islower(), "aBc".islower())
+print ("Ab12 Ab12".istitle(), "Ab12 AB12".istitle())'''
+
+
+#6
+txt = "_*_ABC_*_abc_*_"
+print (txt.lstrip("_*_"))
+print (txt.rstrip("_*_"))
+print (txt.strip("_*_"))
+print(txt.split("*"))
+print(txt.rsplit("*"))
+print(txt.partition("*"))
+print(txt.rpartition("*"))
+print ("abc \n ABC \n  ***". splitlines())
+print("_*_".join(["AAA", "BBB", "CCC"]))
+
+
+#7
+txt = "ABCDEFGH"
+print ("*" +txt.center(20)+  "*")
+print ("*" +txt.ljust(20)+  "*")
+print ("*" +txt.rjust(20)+  "*")
+
+
+#8
+
+txt="{0}  to {0} - will be {1}"
+print (txt.format("two" , "four"))
+print (txt.format ("three", "nine"))
+print ("TEXT '{0}': {0:<20}. " .format("abcdef") )
+print ("TEXT '{0}': {0:^20}. " .format("abcdef") )
+print ("TEXT '{0}': {0:>20}. " .format("abcdef") )
